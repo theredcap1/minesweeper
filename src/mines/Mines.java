@@ -8,17 +8,15 @@ import javax.swing.JLabel;
 // Source: http://zetcode.com/tutorials/javagamestutorial/minesweeper/
 
 public class Mines extends JFrame {
-	private static final long serialVersionUID = 4772165125287256837L;
-	
-	private final int WIDTH = 250;
-    private final int HEIGHT = 290;
+    private static final long serialVersionUID = 4772165125287256837L;
+]
 
     private JLabel statusbar;
-    
+
     public Mines() {
 
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(WIDTH, HEIGHT);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setSize(250, 290);
         setLocationRelativeTo(null);
         setTitle("Minesweeper");
 
@@ -30,7 +28,7 @@ public class Mines extends JFrame {
         setResizable(false);
         setVisible(true);
     }
-    
+
     public static void main(String[] args) {
         new Mines();
     }
